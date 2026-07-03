@@ -11,6 +11,14 @@ A powerful command-line tool for generating random data files using system entro
 - **Smart dependencies**: Auto-detects and prompts for apt packages
 - **Debian/Ubuntu native**: No pip, no PyPI - only apt packages
 
+## GUI
+
+Prefer a desktop app? [`gui/`](gui/) is a GTK4 + libadwaita front-end for
+this same tool -- 20 built-in themes, live progress, cancellation, Shannon
+entropy analysis, and byte-frequency visualization, all driving this
+`entropy.py` unmodified as a subprocess. Ubuntu install via `.deb` or a
+plain install script; see [gui/README.md](gui/README.md).
+
 ## Quick Start
 
 ```bash

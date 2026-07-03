@@ -1,0 +1,17 @@
+Package: entropy-gui
+Version: @VERSION@
+Section: utils
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.8), python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
+Maintainer: jegly <jegly@users.noreply.github.com>
+Homepage: https://github.com/jegly/entropy
+Description: GTK4 + libadwaita front-end for the entropy random data generator
+ Entropy GUI drives jegly/entropy (a cryptographically secure random data
+ generator) as a subprocess and adds live progress, cancellation, Shannon
+ entropy analysis, byte-frequency visualization, and a Tesseract-style
+ theme engine with 20 built-in palettes.
+ .
+ The generator CLI itself is vendored unmodified at
+ /usr/lib/entropy-gui/entropy_gui/vendor/entropy.py -- this package never
+ reimplements its logic, only wraps it.

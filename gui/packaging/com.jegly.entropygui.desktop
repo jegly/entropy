@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Entropy
+GenericName=Random Data Generator
+Comment=Generate cryptographically secure random files and analyze their entropy
+Icon=com.jegly.entropygui
+Exec=entropy-gui
+Terminal=false
+Categories=Utility;System;GTK;
+Keywords=random;entropy;urandom;crypto;testing;benchmark;dd;
+StartupNotify=true
+StartupWMClass=com.jegly.entropygui
