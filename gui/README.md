@@ -102,7 +102,8 @@ packaging/
   build-deb.sh             builds entropy-gui_<version>_all.deb
   com.jegly.entropygui.desktop
   debian/                  control/postinst/postrm/copyright for the .deb
-  icons/hicolor/256x256/apps/com.jegly.entropygui.png
+  icons/generate_icon.py   redraws the app icon from its 32x32 pixel grid
+  icons/hicolor/{32,64,128,256}/apps/com.jegly.entropygui.png
 ```
 
 ## Credits

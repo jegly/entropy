@@ -48,5 +48,7 @@ dpkg-deb --build --root-owner-group "$STAGE" "$OUT"
 
 echo
 echo "Built: $OUT"
-echo "Install with:   sudo apt install $(basename "$OUT")   (run from $REPO_ROOT)"
+# The ./ is load-bearing: apt only treats an argument as a file path if it
+# contains a slash, otherwise it hunts for a repo package by that name.
+echo "Install with:   sudo apt install ./$(basename "$OUT")   (run from $REPO_ROOT)"
 echo "Remove with:    sudo apt remove entropy-gui"
